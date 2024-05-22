@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Обновление статьи</h1>
+    <form method="post">
+            <label for="name">Имя:</label> <input class="form-control" type="text" id="name" name="name" required value="{{ guest.id }}" ><br><br>
+    <label for="phone">Номер телефона: </label> <input class="form-control" type="tel" id="phone" name="phone" pattern="[0-9, +]{12}" maxlength="10" required value="{{ guest.phone }}"><br><br>
+    <label for="people">Количество человек:</label> <input class="form-control" type="number" min="1" id="people" name="people" required value="{{ guest.people }}"><br><br>
+    <label for="room">Номер комнаты:</label> <input class="form-control" type="number" min="1" id="room" name="room" required value="{{ guest.room }}"><br><br>
+    <label for="days">Количество дней:</label> <input class="form-control" type="number" min="1" id="days" name="days" required value="{{ guest.days }}"><br><br>
+    <input class="form-control" type="submit" value="Обновить"><br>
+    </form>
+
+
+</div>
+</body>
+</html>
